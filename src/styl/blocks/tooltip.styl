@@ -1,0 +1,92 @@
+.tooltip
+	width: 16px
+	height: 16px
+	text-transform: none
+	position: relative
+	display: inline-block
+	margin-left: 10px
+	// @media mobile
+	// 	width: 32px
+	// 	height: 32px
+	// 	border: 1px solid rgba(0, 0, 0, 0.2)
+	// 	border-radius: 3px
+	// 	background-color: #fff
+	// 	padding: 7px
+	// 	margin-left: 15px
+	// 	display: flex
+	// 	justify-content: center
+	// 	align-items: center
+	&:before
+		content: ""
+		width: 16px
+		height: 16px
+		border-radius 50%
+		opacity: .4
+		display: block
+		background: #000 url('../images/icon-question.svg') 50% no-repeat
+	&:hover
+		&:before
+			opacity: .7
+	&:hover
+		.tooltip__content
+			left: calc(100% + 14px)
+			opacity: 1
+			visibility: visible
+			z-index: 10
+			// @media tablet
+			// 	left: 0
+	
+	&--extended
+		width: auto
+		height: auto
+		margin: 0
+		// @media mobile
+		// 	border: none
+		// 	vertical-align: middle
+		// 	display: inline-block
+		&:before
+			display: none
+		.tooltip__сontent
+			margin: auto
+			left: calc(100% + 18px)
+			// @media tablet
+			// 	left: 0
+	&__content
+		width: 285px
+		min-height: 50px // чтобы подсказка не выглядела кривой, когда только одна строка
+		color: #000000 // чтобы не наследовался родительский
+		font-size: 13px
+		line-height: 1.38
+		font-weight: 400
+		letter-spacing: normal
+		background-color: #fff
+		border: 1px solid rgba(0, 0, 0, 0.1)
+		box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.24)
+		padding: 11px 15px
+		opacity: 0
+		visibility: hidden
+		position: absolute
+		top: -18px
+		left: calc(100% + 18px)
+		z-index: -1
+		transition: all 0.3s, transform 0s
+		&:after
+			content: ""
+			width: 14px
+			height: 14px
+			background-color: #fff
+			border: 1px solid rgba(0, 0, 0, 0.1)
+			box-shadow: -3px 3px 4px 0 rgba(0, 0, 0, 0.04)
+			border-top: none
+			border-right: none
+			position: absolute
+			top: 18px
+			left: -8px
+			display: block
+			transform: rotate(45deg)
+		&.small
+			width: 200px
+			min-height: 37px
+			top: -12px
+			&:after
+				top: 12px

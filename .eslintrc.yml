@@ -1,0 +1,19 @@
+parser: babel-eslint
+
+extends: airbnb-base
+
+env:
+    browser: true
+    node: true
+
+rules:
+    linebreak-style: off
+    brace-style: [error, stroustrup, {allowSingleLine: true}]
+    indent: [error, tab, {SwitchCase: 1}]
+    no-tabs: off
+    max-len: [error, {code: 120, ignoreUrls: true}]
+    comma-dangle: [error, always-multiline]
+    no-underscore-dangle: [error, {allowAfterThis: true, allowAfterSuper: true}]
+    no-plusplus: [error, {allowForLoopAfterthoughts: true}]
+    object-curly-spacing: [error, never]
+    no-console: off

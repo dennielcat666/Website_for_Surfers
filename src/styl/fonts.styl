@@ -1,0 +1,15 @@
+@require "_core"
+
+for num in 400 500 700
+	@font-face
+		font-family fontFamily
+		font-style normal
+		font-weight num
+		src s("url('../fonts/%s%s.woff2')", fontFamily, num) format('woff2'),
+		s("url('../fonts/%s%s.woff')", fontFamily, num) format('woff');
+	@font-face
+		font-family fontFamily
+		font-style italic
+		font-weight num
+		src s("url('../fonts/%s%sItalic.woff2')", fontFamily, num) format('woff2'),
+		s("url('../fonts/%s%sItalic.woff')", fontFamily, num) format('woff');

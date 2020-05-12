@@ -1,0 +1,27 @@
+.tabs
+	&__toggles
+		border-bottom 1px solid gray-color
+		margin-bottom 20px
+		display flex
+	&__toggle
+		border 1px solid gray-color
+		border-bottom none
+		padding 10px 20px
+		position relative
+		flex 0 1 auto
+		cursor pointer
+		&:not(.active):hover
+			background-color gray-color
+		& + &
+			border-left none
+		&.active
+			&:after
+				content ""
+				size 100% 1px
+				background-color bg-color
+				position absolute
+				left 0
+				bottom -1px
+				display block
+	&__tab:not(.active)
+		display none

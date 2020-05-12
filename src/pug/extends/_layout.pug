@@ -1,0 +1,42 @@
+include ../includes/_mixins
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		title Website for Surfers
+
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+		//- ===== favicons =====
+		link(rel="shortcut icon" type="image/x-icon" href="images/favicon.ico")
+		link(rel="apple-touch-icon" sizes="57x57" href="images/favicon-iphone.svg")
+		link(rel="apple-touch-icon" sizes="114x114" href="images/favicon-iphone.svg")
+		link(rel="apple-touch-icon" sizes="72x72" href="images/favicon-iphone.svg")
+		link(rel="apple-touch-icon" sizes="144x144" href="images/favicon-iphone.svg")
+		link(rel="apple-touch-icon" sizes="57x57" href="images/favicon-iphone.png")
+		link(rel="apple-touch-icon" sizes="114x114" href="images/favicon-iphone.png")
+		link(rel="apple-touch-icon" sizes="72x72" href="images/favicon-iphone.png")
+		link(rel="apple-touch-icon" sizes="144x144" href="images/favicon-iphone.png")
+
+		//- ===== styles =====
+		link(rel="stylesheet", href="css/fonts.css")
+		link(rel="stylesheet", href="css/all.css")
+	body
+		.canvas.js-canvas
+			block body
+				header.header
+					.row
+						.col-12
+							| header
+							.burger.hide-moretablet.js-side-toggle
+				main.main
+					block content
+				footer.footer footer
+		aside.side-menu.js-side side-menu
+		.popup-bg.js-popup-bg
+			.popup#popup
+				.popup__close.js-popup-close
+				.popup__loaded.js-popup-loaded
+
+		script(type="text/javascript", src="js/all.js", async="async")
