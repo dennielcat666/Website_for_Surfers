@@ -26,22 +26,25 @@ html(lang="ru")
 		.canvas.js-canvas
 			block body
 				header.header
-					.row
-						.col-3
-							| Surfers Co.
-						.col-6
-							a.menu-item(href="#") Boards
-							a.menu-item(href="#") Accessories
-							a.menu-item(href="#") Blog
-							a.menu-item(href="#") Technology
-							a.menu-item(href="#") Team
-							a.menu-item(href="#") Dealers
-						.col-2
+					.row.header__box
+						.col-12.header__box--rem
+							.logo Surfers Co.
+							.menu
+								a.menu-item(href="#") Boards
+								a.menu-item(href="#") Accessories
+								a.menu-item(href="#") Blog
+								a.menu-item(href="#") Technology
+								a.menu-item(href="#") Team
+								a.menu-item(href="#") Dealers
 							.sprite
-								a.sprite__link(href="#")
-								a.sprite__link(href="#")
-								a.sprite__link(href="#")
+								a.sprite__link.sprite__link--facebook(href="#")
+								a.sprite__link.sprite__link--instagram(href="#")
+								a.sprite__link.sprite__link--mail(href="#")
 							.burger.hide-moretablet.js-side-toggle
+						.col-12
+							.title
+								.title__name Ride every wave as if it's your last
+								.title__promo We love the motion of the ocean
 				main.main
 					block content
 				footer.footer footer

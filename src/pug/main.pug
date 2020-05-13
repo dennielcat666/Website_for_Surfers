@@ -1,4 +1,14 @@
 extends extends/_layout
 
 block content
-	| page 1
+	.score
+		.row
+			.score__box
+				.score__board
+					.score__board-big
+						img.score__board-big__img(src='./images/board_big.png', alt="Доска для серфа")
+					.score__board-small
+						a.score__board-small__img(style="background-image: url(./images/board_small-1.png)")
+						a.score__board-small__img(style="background-image: url(./images/board_small-2.png)")
+						a.score__board-small__img(style="background-image: url(./images/board_small-3.png)")
+						a.score__board-small__img(style="background-image: url(./images/board_small-4.png)")
