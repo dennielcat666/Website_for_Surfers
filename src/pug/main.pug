@@ -3,46 +3,49 @@ extends extends/_layout
 block content
 	.score
 		.row
-			.score__box
-				.score__board
-					.score__board-big
-						img.score__board-big__img(src='./images/board_big.png', alt="Доска для серфа")
-					.score__board-small
-						a.score__board-small__img(style="background-image: url(./images/board_small-1.png)")
-						a.score__board-small__img(style="background-image: url(./images/board_small-2.png)")
-						a.score__board-small__img(style="background-image: url(./images/board_small-3.png)")
-						a.score__board-small__img(style="background-image: url(./images/board_small-4.png)")
-				.score__info
-					.score__info-name
-						.score__info-name__board JR Surfboards The Donny Stoker Yellow/Green Rail Fade
-						.score__info-name__rating
-							a.rating-star--yellow(href="#")
-							a.rating-star--white(href="#")
-							a.rating-number(href="#") (52)
-					.tabs.js-tabs
-						.tabs__toggles
-							.tabs__toggle.js-tabs-toggle Description
-							.tabs__toggle.js-tabs-toggle Features
-							.tabs__toggle.js-tabs-toggle Dimensions
-						.tabs__tab.js-tabs-tab Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.
-						.tabs__tab.js-tabs-tab Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales.
-						.tabs__tab.js-tabs-tab The size: 8'6 x 33 x 4.75
-					//- .score__tabs
-					//- 	.score__tabs-link
-					//- 		.score__tabs-link__title.tabs_link--active Description
-					//- 		.score__tabs-link__title Features
-					//- 		.score__tabs-link__title Dimensions
-					//- 	.score__tabs-block
-					//- 		.score__tabs-block__content.visible
-					//- 			| Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.
-					//- 		.score__tabs-block__content
-					//- 			| Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales.
-					//- 		.score__tabs-block__content
-					//- 			| The size: 8'6 x 33 x 4.75
-					.score__sale
-						.score__sale__price $499.99
-						a.score__sale__sell(href="#") Buy now
-						a.score__sale__more(href="#") View all boards
+			.col-10.col-offset-1
+				.score__box
+					.col-5
+						.score__board
+							.score__board-big
+								img.score__board-big__img(src='./images/board_big.png', alt="Доска для серфа")
+							.score__board-small
+								a.score__board-small__img(style="background-image: url(./images/board_small-1.png)")
+								a.score__board-small__img(style="background-image: url(./images/board_small-2.png)")
+								a.score__board-small__img(style="background-image: url(./images/board_small-3.png)")
+								a.score__board-small__img(style="background-image: url(./images/board_small-4.png)")
+					.col-5
+						.score__info
+							.score__info-name
+								.score__info-name__board JR Surfboards The Donny Stoker Yellow/Green Rail Fade
+								.score__info-name__rating
+									a.rating-star--yellow(href="#")
+									a.rating-star--white(href="#")
+									a.rating-number(href="#") (52)
+							.tabs.js-tabs
+								.tabs__toggles
+									.tabs__toggle.js-tabs-toggle Description
+									.tabs__toggle.js-tabs-toggle Features
+									.tabs__toggle.js-tabs-toggle Dimensions
+								.tabs__tab.js-tabs-tab Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.
+								.tabs__tab.js-tabs-tab Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales.
+								.tabs__tab.js-tabs-tab The size: 8'6 x 33 x 4.75
+							//- .score__tabs
+							//- 	.score__tabs-link
+							//- 		.score__tabs-link__title.tabs_link--active Description
+							//- 		.score__tabs-link__title Features
+							//- 		.score__tabs-link__title Dimensions
+							//- 	.score__tabs-block
+							//- 		.score__tabs-block__content.visible
+							//- 			| Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.
+							//- 		.score__tabs-block__content
+							//- 			| Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales.
+							//- 		.score__tabs-block__content
+							//- 			| The size: 8'6 x 33 x 4.75
+							.score__sale
+								.score__sale__price $499.99
+								a.score__sale__sell(href="#") Buy now
+								a.score__sale__more(href="#") View all boards
 	.offer
 		.row.offer__box
 			.offer__box-promo
