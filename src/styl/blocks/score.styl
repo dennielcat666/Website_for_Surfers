@@ -1,20 +1,91 @@
 .score
+	&__pad
+		padding 0px 86px
+		position relative
+		z-index 5
+		margin-top -265px
 	&__box
 		display flex
+		background-color #ffffff
 		background-image url('../images/corner.png')
+		padding 40px
 		background-repeat no-repeat
 	&__board
 		display flex
 		align-items center
-
+		max-width 530px
+		flex 1 0 auto
+		padding: 35px;
+		&-big
+			margin-right 65px
+			max-width 325px
+			width 100%
 		&-small
 			&__img
 				display block
 				background-repeat no-repeat
-				width 60px
-				height 60px
+				width 70px
+				height 70px
 				border 3px solid transparent
+				background-position: 0px 5px;
 
 				&:hover
 					border 3px solid blue-color
+	&__info
+		padding 0px 15px
+		&-name
+			&__board
+				font-family secondFontFamily
+				font-weight 700
+				font-size 20px
+				line-height 28px
+
+	&__info-name__rating
+		display flex
+		margin-top 5px
+	
+	&__sale
+		margin-top 35px
+		display flex
+		&__price
+			font-family secondFontFamily
+			font-weight 700
+			font-size 24px
+		&__sell
+			border none
+			background-color blue-color
+			color #ffffff
+			margin-left 24px
+			padding 10px 32px
+			font-family secondFontFamily
+			font-weight 700
+			font-size 14px
+			text-transform uppercase
+	&__link
+		margin-top 80px
+		&__more
+			font-family secondFontFamily
+			font-weight 700
+			font-size 16px
+			color blue-color
+			border-bottom 2px solid blue-color
+
+.rating-star
+	margin-right 5px
+	border none
+	background-image url(../images/rating_star_sprite.png)
+	height 14px
+	width 12px
+	background-repeat no-repead
+	&--yellow
+		background-position 0px 0px
+	&--white
+		background-position 13px 0px
+
+.rating-number
+	color #787878
+	font-family secondFontFamily
+	font-weight 700
+	font-size 12px
+	border none
 	

@@ -1,17 +1,25 @@
 .tabs
+	margin-top 33px
 	&__toggles
-		border-bottom 1px solid gray-color
-		margin-bottom 20px
+		border-bottom 1px solid #d9d9d9
+		margin-bottom 21px
 		display flex
 	&__toggle
-		border 1px solid gray-color
-		border-bottom none
-		padding 10px 20px
+		font-size 14px
+		font-family secondFontFamily
+		font-weight 700
+		text-transform uppercase
+		color #a0a0a0
 		position relative
 		flex 0 1 auto
 		cursor pointer
-		&:not(.active):hover
-			background-color gray-color
+
+		&:not(:first-child)
+			margin-left 30px
+		&.active
+			border-bottom 3px solid blue-color
+			color #000000
+			font-weight 700
 		& + &
 			border-left none
 		&.active
@@ -23,5 +31,7 @@
 				left 0
 				bottom -1px
 				display block
-	&__tab:not(.active)
-		display none
+	&__tab
+		line-height 24px
+		&:not(.active)
+			display none
