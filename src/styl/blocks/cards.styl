@@ -1,0 +1,87 @@
+.cards
+	padding-top 278px
+
+.flex-line
+	display flex
+
+.wrapper-card
+	flex 1 0 auto
+	max-width 260px
+	width 100%
+
+	&:not(:first-child)
+		margin-left -21px
+	&:nth-child(2n)
+			position relative
+			z-index 2
+			margin-top 30px
+
+	&:nth-child(2n+1)
+		position relative
+		z-index 1
+
+.card
+	&__wrap
+		display flex
+		flex-direction column
+		align-items center
+		box-shadow 0px 3px 30px rgba(0,0,0,0.2)
+		padding 30px 0px
+		font-family fontFamily
+		font-size 14px
+		color #8c8c8c
+		border-radius 5px
+		background-color #fff
+
+	&__img
+		width 100px
+		height 100px
+		background-repeat no-repeat
+		border-radius 50%
+		border 2px solid #ffffff
+	&__name
+		font-family secondFontFamily
+		font-size 18px
+		font-weight 700
+		color blue-color
+		margin-top 11px
+	&__instagram
+		margin-top 0px
+		line-height 8px
+	&__location
+		position relative
+		margin-top 35px
+		margin-bottom 14px
+		padding-left 20px
+		padding-right 20px
+		&:before
+			position absolute
+			top 50%
+			left 0px
+			transform translateY(-50%)
+			content ''
+			background-image url('../images/pin_icon.png')
+			background-repeat no-repeat
+			width 11px
+			height 14px
+
+.wrapper-card:hover
+	z-index 3
+	& .card__wrap
+		background-color blue-color
+	& .card__name
+		color #fff
+	& .card__instagram
+		color #b3e7ff
+	& .card__location
+		color #b3e7ff
+
+// .card__wrap:hover
+// 	z-index 3
+// 	background-color blue-color
+// 	& .card__name
+// 		color #fff
+// 	& .card__instagram
+// 		color #b3e7ff
+// 	& .card__location
+// 		color #b3e7ff

@@ -47,71 +47,86 @@ block content
 				.offer__box-promo__player
 	.cards
 		.row.cards__box
-			- 
-				cards = [
-					['./images/card-1.png', 'Taj Burrow', '@tajamos', 'Yallingup, Australia'],
-					['./images/card-2.png', 'Malia Manuel', '@maliamanuel', 'Wailua, Hi'],
-					['./images/card-3.png', 'Ian Walsh', '@ian.walsh', 'Maui, Hi'],
-					['./images/card-4.png', 'Macy Callaghan', '@macyjanecallaghan', 'San Clemente, CA'],
-				]
-			each item in cards
-				.col-3
-					.card__wrap
-						.card__img(style="background: url("+ item[0] + ")")
-							img(src=item[0])
-						.card__name=item[1]
-						.card__instagram=item[2]
-						.card__location=item[3]
+			.col-1
+			.col-10.flex-line
+				- 
+					cards = [
+						['./images/card-1.png', 'Taj Burrow', '@tajamos', 'Yallingup, Australia'],
+						['./images/card-2.png', 'Malia Manuel', '@maliamanuel', 'Wailua, Hi'],
+						['./images/card-3.png', 'Ian Walsh', '@ian.walsh', 'Maui, Hi'],
+						['./images/card-4.png', 'Macy Callaghan', '@macyjanecallaghan', 'San Clemente, CA'],
+					]
+				each item in cards
+					.wrapper-card
+						.card__wrap
+							.card__img(style="background: url("+ item[0] + ")")
+							.card__name=item[1]
+							.card__instagram=item[2]
+							.card__location=item[3]
 	.updates
 		.row.updates__box
-			-
-				update = [
-					['./images/updade_img-1.png', 'Ellie Turner and Jobe Harris have taken out the 2016 British National Surf Championships'],
-					['./images/updade_img-2.png', 'A large group of surfers invaded the coast of La Jolla Shores, in California, with a single goal in mind'],
-					['./images/updade_img-3.png', 'Surfboards are constantly evolving, and there are multiple board designs for a broad range of environments'],
-				]
-			each item in update
-				.col-3
-					.updates__wrap
-						.updates__img(style="background: url("+ item[0] + ")")
-						.updates__text=item[1]
-			a.updates__link(href="#") View all posts
+			.col-12.flex-center
+				.updates__name Latest Updates
+			.col-1
+			.col-10.flex-line
+				.updates__block
+					-
+						update = [
+							['./images/updade_img-1.png', 'Ellie Turner and Jobe Harris have taken out the 2016 British National Surf Championships'],
+							['./images/updade_img-2.png', 'A large group of surfers invaded the coast of La Jolla Shores, in California, with a single goal in mind'],
+							['./images/updade_img-3.png', 'Surfboards are constantly evolving, and there are multiple board designs for a broad range of environments'],
+						]
+					each item in update
+						.updates__wrap
+							.updates__img(style="background: url("+ item[0] + ")")
+							.updates__text=item[1]
+			.col-12.flex-center
+				a.updates__link(href="#") View all posts
 	.facebook
 		.row.facebook__box
-			.col-4
-				.facebook__title Facebook
-				.facebook__wrap
-					.facebooke__page
-						.facebook__win Srfrs co
-						.facebook__name Surfers Co.
-						.facebook__like 52,000 likes
-						.facebook__sub
-							a.facebook__like-page(href="#") Like Page
-							a.facebook__share Share
-					.facebook__follower
-						.facebook_follower-title You and 8 friends like this
-						.facebook_follower-box
-							.follower-img(style="background: url(./images/follower-1.png)")
-							.follower-img(style="background: url(./images/follower-2.png)")
-							.follower-img(style="background: url(./images/follower-3.png)")
-							.follower-img(style="background: url(./images/follower-4.png)")
-							.follower-img(style="background: url(./images/follower-5.png)")
-							.follower-img(style="background: url(./images/follower-6.png)")
-							.follower-img(style="background: url(./images/follower-7.png)")
-							.follower-img(style="background: url(./images/follower-8.png)")
-							.follower-img(style="background: url(./images/follower-9.png)")
-	.mosaic
-		.row.mosaic__box
-			.col-6
-				.mosaic__img(style="background: url(./images/mosaic-1.png)")
-			.col-6
-				.mosaic__img(style="background: url(./images/mosaic-2.png)")
-			.col-6
-				.mosaic__img(style="background: url(./images/mosaic-3.png)")
-			.col-6
-				.mosaic__img(style="background: url(./images/mosaic-4.png)")
-			.col-12
-				.mosaic__footer
-					.mosaic__instagram(style="background: url(./images/inst.png)")
-					.mosaic__instagram-link @surfersco
+			.col-12.flex
+				.mosaic__box
+					.mosaic__img(style="background-image: url(./images/mosaic-1.png)")
+					.mosaic__img(style="background-image: url(./images/mosaic-2.png)")
+					.mosaic__img(style="background-image: url(./images/mosaic-3.png)")
+					.mosaic__img(style="background-image: url(./images/mosaic-4.png)")
+					.mosaic__footer
+						.mosaic__instagram(style="background-image: url(./images/inst.png)")
+						.mosaic__instagram-link @surfersco
+				.facebook__bg
+					.facebook__title(style="background-image: url(./images/logo_facebook.png)")
+					.facebook__wrap
+						.facebooke__page
+							.facebook__win Srfrs co
+							.facebook__name Surfers Co.
+							.facebook__like 52,000 likes
+							.facebook__sub
+								a.facebook__like-page(href="#") Like Page
+								a.facebook__share Share
+						.facebook__follower
+							.facebook_follower-title You and 8 friends like this
+							.facebook_follower-box
+								.follower-img(style="background-image: url(./images/follower-1.png)")
+								.follower-img(style="background-image: url(./images/follower-2.png)")
+								.follower-img(style="background-image: url(./images/follower-3.png)")
+								.follower-img(style="background-image: url(./images/follower-4.png)")
+								.follower-img(style="background-image: url(./images/follower-5.png)")
+								.follower-img(style="background-image: url(./images/follower-6.png)")
+								.follower-img(style="background-image: url(./images/follower-7.png)")
+								.follower-img(style="background-image: url(./images/follower-8.png)")
+								.follower-img(style="background-image: url(./images/follower-9.png)")
+	//- .mosaic
+	//- 	.row.mosaic__box
+	//- 		.col-6
+	//- 			.mosaic__img(style="background: url(./images/mosaic-1.png)")
+	//- 		.col-6
+	//- 			.mosaic__img(style="background: url(./images/mosaic-2.png)")
+	//- 		.col-6
+	//- 			.mosaic__img(style="background: url(./images/mosaic-3.png)")
+	//- 		.col-6
+	//- 			.mosaic__img(style="background: url(./images/mosaic-4.png)")
+	//- 		.col-12
+	//- 			.mosaic__footer
+	//- 				.mosaic__instagram(style="background: url(./images/inst.png)")
+	//- 				.mosaic__instagram-link @surfersco
 
