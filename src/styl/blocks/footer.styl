@@ -1,0 +1,75 @@
+.footer
+	margin-top -225px
+	padding 40px 0px
+	position relative
+	z-index 1
+	&__box
+		// display flex
+		// flex-direction column
+	&__menu
+		display flex
+		margin-left 73px
+	&__menu-colum:not(:first-child)
+		margin-left 63px
+	&__menu-link
+		font-family fontFamily
+		font-size 14px
+		position relative
+		display block
+		padding-left 30px
+		color #fff
+		border none
+		line-height 25px
+		&:not(:first-child)
+			margin-top 9px
+		&:before
+			position absolute
+			top 50%
+			left 0px
+			transform translateY(-50%)
+			background-repeat no-repeat
+			content ''
+			background-image url('../images/wave_y.png')
+			height 6px
+			width 100%
+	&__bottom
+		margin-top 75px
+		display flex
+	&__copyright
+		color #4d4d4d
+		font-weight 600
+		font-family fontFamily
+		font-size 12px
+	&__icon
+		font-size 18px
+	&__mail
+		padding-top 45px
+		padding-bottom 17px
+		margin-left 67px
+	&__mail-title
+		color #fff
+		font-family secondFontFamily
+		font-size 16px
+		font-weight 400
+	&__form
+		position relative
+		&:before
+			content ''
+			position absolute
+			top 16px
+			left 4px
+			background-image url('../images/mail_icon.png')
+			height 11px
+			width 16px
+	&__send
+		position absolute
+		top 50%
+		right 0px
+		transform translateY(-50%)
+		width 22px
+		height 22px
+		background-color blue-color
+		background-image url('../images/mail_arrow.png')
+		background-repeat no-repeat
+		background-position 5px 5px
+		border-radius 50%

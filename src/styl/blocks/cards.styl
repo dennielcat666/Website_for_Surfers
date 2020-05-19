@@ -46,11 +46,23 @@
 		color blue-color
 		margin-top 11px
 	&__instagram
+		position relative
 		margin-top 0px
 		line-height 8px
+		padding-bottom 25px
+		&:before
+			content ''
+			position absolute
+			top 27px
+			left 50%
+			transform translateX(-50%)
+			background-image url('../images/wave_g.png')
+			background-repeat no-repeat
+			height 6px
+			width 31px
 	&__location
 		position relative
-		margin-top 35px
+		margin-top 10px
 		margin-bottom 14px
 		padding-left 20px
 		padding-right 20px
@@ -73,6 +85,8 @@
 		color #fff
 	& .card__instagram
 		color #b3e7ff
+		&:before
+			background-image url('../images/wave_b.png')
 	& .card__location
 		color #b3e7ff
 

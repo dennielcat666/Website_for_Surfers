@@ -30,11 +30,12 @@
 		position relative
 		z-index 2
 
-
 		&--rem
 			display flex
 			justify-content space-between
 			align-items center
+			@media tablet
+				justify-content space-between
 
 .my_flex_align
 	display flex
@@ -49,8 +50,10 @@
 
 .menu
 	padding-right 44px
+	@media tablet
+		display none
 
-.menu-item
+.menu__item
 	display inline-block
 	font-family secondFontFamily
 	font-weight 700
@@ -67,9 +70,9 @@
 	&:hover
 		color #fff
 		background-color blue-color
-
-	/* &:not(:last-child)
-		margin-right 10px */
+.menu--side
+	display flex
+	flex-direction column
 
 .my_flex_end
 	display flex

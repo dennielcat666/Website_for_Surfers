@@ -38,13 +38,14 @@ block content
 	.offer__banner
 	.offer__content
 		.row.offer__box
-			.col-5.col-offset-1
+			.col-5.col-offset-1.col-md-6
 				.offer__box-promo
 					.offer__box-promo__name We are Surfers co.
 					.offer__box-promo__text Lorem ipsum dolor sit amet, aeneam consectetur adipiscing elit. Fusce iaculis feugiat arcunum fermentum hendrerit. Suspendisse auctor labor nisi, et interdum diam facilisis, aliquam pulvinar semi egetis belle sollicitudin ut. Nullam tincidun finibustus scelerisque.
 					a.offer__box-promo__link(href="#") Read more
-			.col-6
+			.col-6.col-md-12.md-center
 				.offer__box-promo__player
+					<iframe width="500" height="300" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	.cards
 		.row.cards__box
 			.col-1
@@ -86,47 +87,35 @@ block content
 		.row.facebook__box
 			.col-12.flex
 				.mosaic__box
-					.mosaic__img(style="background-image: url(./images/mosaic-1.png)")
-					.mosaic__img(style="background-image: url(./images/mosaic-2.png)")
-					.mosaic__img(style="background-image: url(./images/mosaic-3.png)")
-					.mosaic__img(style="background-image: url(./images/mosaic-4.png)")
+					.mosaic__box-img
+						.mosaic__img(style="background-image: url(./images/mosaic-1.png)")
+						.mosaic__img(style="background-image: url(./images/mosaic-2.png)")
+						.mosaic__img(style="background-image: url(./images/mosaic-3.png)")
+						.mosaic__img(style="background-image: url(./images/mosaic-4.png)")
 					.mosaic__footer
-						.mosaic__instagram(style="background-image: url(./images/inst.png)")
+						img.mosaic__instagram(src="./images/inst.png", alt="")
 						.mosaic__instagram-link @surfersco
 				.facebook__bg
 					.facebook__title(style="background-image: url(./images/logo_facebook.png)")
 					.facebook__wrap
-						.facebooke__page
-							.facebook__win Srfrs co
-							.facebook__name Surfers Co.
-							.facebook__like 52,000 likes
+						.facebook__page
+							.facebook__page-item
+								.facebook__win Srfrs co
+								.facebook__col
+									.facebook__name Surfers Co.
+									.facebook__like 52,000 likes
 							.facebook__sub
 								a.facebook__like-page(href="#") Like Page
-								a.facebook__share Share
+								a.facebook__share(href="#") Share
 						.facebook__follower
-							.facebook_follower-title You and 8 friends like this
-							.facebook_follower-box
-								.follower-img(style="background-image: url(./images/follower-1.png)")
-								.follower-img(style="background-image: url(./images/follower-2.png)")
-								.follower-img(style="background-image: url(./images/follower-3.png)")
-								.follower-img(style="background-image: url(./images/follower-4.png)")
-								.follower-img(style="background-image: url(./images/follower-5.png)")
-								.follower-img(style="background-image: url(./images/follower-6.png)")
-								.follower-img(style="background-image: url(./images/follower-7.png)")
-								.follower-img(style="background-image: url(./images/follower-8.png)")
-								.follower-img(style="background-image: url(./images/follower-9.png)")
-	//- .mosaic
-	//- 	.row.mosaic__box
-	//- 		.col-6
-	//- 			.mosaic__img(style="background: url(./images/mosaic-1.png)")
-	//- 		.col-6
-	//- 			.mosaic__img(style="background: url(./images/mosaic-2.png)")
-	//- 		.col-6
-	//- 			.mosaic__img(style="background: url(./images/mosaic-3.png)")
-	//- 		.col-6
-	//- 			.mosaic__img(style="background: url(./images/mosaic-4.png)")
-	//- 		.col-12
-	//- 			.mosaic__footer
-	//- 				.mosaic__instagram(style="background: url(./images/inst.png)")
-	//- 				.mosaic__instagram-link @surfersco
-
+							.facebook__follower-title You and 8 friends like this
+							.facebook__follower-box
+								.facebook__follower-img(style="background-image: url(./images/follower-1.png)")
+								.facebook__follower-img(style="background-image: url(./images/follower-2.png)")
+								.facebook__follower-img(style="background-image: url(./images/follower-3.png)")
+								.facebook__follower-img(style="background-image: url(./images/follower-4.png)")
+								.facebook__follower-img(style="background-image: url(./images/follower-5.png)")
+								.facebook__follower-img(style="background-image: url(./images/follower-6.png)")
+								.facebook__follower-img(style="background-image: url(./images/follower-7.png)")
+								.facebook__follower-img(style="background-image: url(./images/follower-8.png)")
+								.facebook__follower-img(style="background-image: url(./images/follower-9.png)")

@@ -27,20 +27,20 @@ html(lang="ru")
 			block body
 				header.header
 					.row.header__box
-						.col-12.header__box--rem
+						.col-12.col-md-12.header__box--rem
+							.burger.hide-moretablet.js-side-toggle
 							.logo Surfers Co.
 							.menu
-								a.menu-item(href="#") Boards
-								a.menu-item(href="#") Accessories
-								a.menu-item(href="#") Blog
-								a.menu-item(href="#") Technology
-								a.menu-item(href="#") Team
-								a.menu-item(href="#") Dealers
+								a.menu__item(href="#") Boards
+								a.menu__item(href="#") Accessories
+								a.menu__item(href="#") Blog
+								a.menu__item(href="#") Technology
+								a.menu__item(href="#") Team
+								a.menu__item(href="#") Dealers
 							.sprite
 								a.sprite__link.sprite__link--facebook(href="#")
 								a.sprite__link.sprite__link--instagram(href="#")
 								a.sprite__link.sprite__link--mail(href="#")
-							.burger.hide-moretablet.js-side-toggle
 						.col-12
 							.title
 								.title__name Ride every wave as if it's your last
@@ -49,23 +49,37 @@ html(lang="ru")
 					block content
 				footer.footer
 					.row.footer__box
-						.footer__menu
-							.footer__menu-colum
-								a.footer__menu-link(href="") About
-								a.footer__menu-link(href="") Boards
-								a.footer__menu-link(href="") Accessories
-								a.footer__menu-link(href="") Blog
-							.footer__menu-colum
-								a.footer__menu-link(href="") Technology
-								a.footer__menu-link(href="") Team
-								a.footer__menu-link(href="") Dealers
-								a.footer__menu-link(href="") Contact us
-						.footer__bottom
-							.footer__copyright &#169; 2017 Surfers Co. #[span.footer_icon &#183;] Design by @lucaalco
-							.footer__mail
-								.footer__mail-title Subscribe to our newsletter
-								input(type="text")
-		aside.side-menu.js-side side-menu
+						.col-6
+						.col-6
+							.footer__menu
+								.footer__menu-colum
+									a.footer__menu-link(href="") About
+									a.footer__menu-link(href="") Boards
+									a.footer__menu-link(href="") Accessories
+									a.footer__menu-link(href="") Blog
+								.footer__menu-colum
+									a.footer__menu-link(href="") Technology
+									a.footer__menu-link(href="") Team
+									a.footer__menu-link(href="") Dealers
+									a.footer__menu-link(href="") Contact us
+						.col-12
+							.footer__bottom.row
+								.col-6
+									.footer__copyright &#169; 2017 Surfers Co. #[span.footer__icon &#183;] Design by @lucaalco
+								.col-4
+									.footer__mail
+										.footer__mail-title Subscribe to our newsletter
+										form.footer__form(action="")
+											input.footer__input(type="email" placeholder="Your e-mail")
+											a.footer__send(href="")
+		aside.side-menu.js-side
+			.menu--side
+				a.menu__item.menu__item--side(href="#") Boards
+				a.menu__item.menu__item--side(href="#") Accessories
+				a.menu__item.menu__item--side(href="#") Blog
+				a.menu__item.menu__item--side(href="#") Technology
+				a.menu__item.menu__item--side(href="#") Team
+				a.menu__item.menu__item--side(href="#") Dealers
 		.popup-bg.js-popup-bg
 			.popup#popup
 				.popup__close.js-popup-close

@@ -7,6 +7,9 @@
 		background-repeat no-repeat
 		height 640px
 		width 100%
+		@media tablet
+			margin-top 100px
+			height 320px
 	&__content
 		background-color #ffffff
 	&__box-promo
@@ -22,6 +25,8 @@
 			right: 100%;
 			content ''
 			width 100vw
+			// @media tablet
+			// 	display none
 		&__name
 			position relative
 			max-width 370px
@@ -61,3 +66,10 @@
 			background-color #ff0000
 			width 500px
 			height 300px
+			@media tablet
+				margin-top 25px
+				margin-left 41px
+.md-center
+	@media tablet
+		display flex
+		justify-content center
