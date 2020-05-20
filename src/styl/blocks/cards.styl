@@ -1,20 +1,43 @@
 .cards
 	padding-top 278px
-
+	@media tablet
+		padding-top 70px
+	@media mobile
+		padding-top 50px
+	@media small
+		padding-top 35px
 .flex-line
 	display flex
-
+	@media tablet
+		flex-wrap wrap
+		
 .wrapper-card
 	flex 1 0 auto
 	max-width 260px
 	width 100%
+	@media tablet
+		flex 1 0 50%
+		max-width none
+	@media small
+		flex 1 0 100%
 
+.wrapper-card
+	&:nth-child(n+3)
+		@media tablet
+			margin-top 20px
 	&:not(:first-child)
 		margin-left -21px
+		@media tablet
+			margin-left 0px
+	&:nth-child(2)
+		@media small
+			margin-top 20px
 	&:nth-child(2n)
 			position relative
 			z-index 2
 			margin-top 30px
+			@media tablet
+				margin-top 20px
 
 	&:nth-child(2n+1)
 		position relative
@@ -89,13 +112,3 @@
 			background-image url('../images/wave_b.png')
 	& .card__location
 		color #b3e7ff
-
-// .card__wrap:hover
-// 	z-index 3
-// 	background-color blue-color
-// 	& .card__name
-// 		color #fff
-// 	& .card__instagram
-// 		color #b3e7ff
-// 	& .card__location
-// 		color #b3e7ff

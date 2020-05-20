@@ -1,6 +1,10 @@
 .updates
 	&__box
 		margin-top 175px
+		@media tablet
+			margin-top 100px
+		@media mobile
+			margin-top 50px
 	&__name
 		position relative
 		font-family secondFontFamily
@@ -23,12 +27,24 @@
 		padding-left 50px
 		padding-right 50px
 		margin-top 63px
+		@media tablet
+			flex-wrap wrap
+			justify-content center
+		@media small
+			padding-left 10px
+			padding-right 10px
 	&__wrap
 		max-width 270px
 		width 100%
 		background-color #fff
 		&:not(:first-child)
 			margin-left 30px
+		&:last-child
+			@media tablet
+				margin-left 0px
+		&:nth-child(2)
+			@media mobile
+				margin-left 0px
 	&__img
 		width 270px
 		height 203px

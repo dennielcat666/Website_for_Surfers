@@ -38,18 +38,18 @@ block content
 	.offer__banner
 	.offer__content
 		.row.offer__box
-			.col-5.col-offset-1.col-md-6
+			.col-5.col-offset-1.col-md-6.col-xs-12
 				.offer__box-promo
 					.offer__box-promo__name We are Surfers co.
 					.offer__box-promo__text Lorem ipsum dolor sit amet, aeneam consectetur adipiscing elit. Fusce iaculis feugiat arcunum fermentum hendrerit. Suspendisse auctor labor nisi, et interdum diam facilisis, aliquam pulvinar semi egetis belle sollicitudin ut. Nullam tincidun finibustus scelerisque.
 					a.offer__box-promo__link(href="#") Read more
 			.col-6.col-md-12.md-center
 				.offer__box-promo__player
-					<iframe width="500" height="300" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe class="offer__box-promo__iframe" width="500" height="300" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	.cards
 		.row.cards__box
-			.col-1
-			.col-10.flex-line
+			.col-1.col-md-0
+			.col-10.col-md-12.col-xs-12.flex-line
 				- 
 					cards = [
 						['./images/card-1.png', 'Taj Burrow', '@tajamos', 'Yallingup, Australia'],
@@ -68,8 +68,8 @@ block content
 		.row.updates__box
 			.col-12.flex-center
 				.updates__name Latest Updates
-			.col-1
-			.col-10.flex-line
+			.col-1.col-md-0
+			.col-10.col-md-12.flex-line
 				.updates__block
 					-
 						update = [

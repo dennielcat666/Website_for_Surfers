@@ -4,6 +4,11 @@
 		position relative
 		z-index 5
 		margin-top -265px
+		@media mobile
+			padding 0px 20px
+		@media small
+			padding 0px 10px
+			margin-top -365px
 	&__box
 		display flex
 		background-color #ffffff
@@ -13,6 +18,10 @@
 		@media tablet
 			flex-direction column
 			box-shadow 0px 3px 30px rgba(0,0,0,0.2)
+		@media mobile
+			padding 10px 0px
+		@media small
+			padding 5px 0px
 	&__board
 		display flex
 		align-items center
@@ -22,12 +31,21 @@
 		@media tablet
 			padding 0px 35px
 			margin 0 auto
+		@media small
+			padding 0px 10px
+			flex-direction column
 
 		&-big
 			margin-right 65px
 			max-width 325px
 			width 100%
+			@media small
+				margin-right 0px
+
 		&-small
+			@media small
+				display flex
+				padding 10px 0px
 			&__img
 				display block
 				background-repeat no-repeat
@@ -42,6 +60,8 @@
 		padding 0px 15px
 		@media tablet
 			margin-top 65px
+		@media small
+			margin-top 25px
 		&-name
 			@media tablet
 				text-align center
@@ -50,6 +70,9 @@
 				font-weight 700
 				font-size 20px
 				line-height 28px
+				@media small
+					font-size 14px
+					line-height 15px
 
 	&__info-name__rating
 		display flex

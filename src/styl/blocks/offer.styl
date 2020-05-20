@@ -10,8 +10,12 @@
 		@media tablet
 			margin-top 100px
 			height 320px
+		@media small
+			display none
 	&__content
 		background-color #ffffff
+		@media small
+			margin-top 350px
 	&__box-promo
 		position relative
 		background-color #ffffff
@@ -25,8 +29,11 @@
 			right: 100%;
 			content ''
 			width 100vw
-			// @media tablet
-			// 	display none
+		@media tablet
+			padding 47px 0px 0px 0px
+		@media mobile
+			padding 47px 0px 0px 0px
+		
 		&__name
 			position relative
 			max-width 370px
@@ -52,6 +59,12 @@
 			font-size 22px
 			margin-top 50px
 			line-height 38px
+			@media mobile
+				font-size 14px
+				line-height 25px
+			@media small
+				text-align center
+				margin-top 35px
 		&__link
 			margin-top 20px
 			display inline-block
@@ -60,6 +73,8 @@
 			font-weight 700
 			font-size 16px
 			border-bottom 2px solid blue-color
+			@media mobile
+				font-size 14px
 		&__player
 			margin-top -80px
 			margin-left 41px
@@ -69,6 +84,20 @@
 			@media tablet
 				margin-top 25px
 				margin-left 41px
+			@media mobile
+				margin-left 0px
+				background-color #fff
+			@media small
+				height 220px
+		&__iframe
+			width 100%
+			max-width 500px
+			max-height calc(0.52 * 100vw)
+			margin-left auto
+			margin-right auto
+			display block
+			overflow hidden
+
 .md-center
 	@media tablet
 		display flex
