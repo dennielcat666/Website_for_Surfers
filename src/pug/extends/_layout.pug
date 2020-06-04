@@ -5,18 +5,7 @@ html(lang="ru")
 		title Website for Surfers
 
 		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
-
-		//- ===== favicons =====
-		link(rel="shortcut icon" type="image/x-icon" href="images/favicon.ico")
-		link(rel="apple-touch-icon" sizes="57x57" href="images/favicon-iphone.svg")
-		link(rel="apple-touch-icon" sizes="114x114" href="images/favicon-iphone.svg")
-		link(rel="apple-touch-icon" sizes="72x72" href="images/favicon-iphone.svg")
-		link(rel="apple-touch-icon" sizes="144x144" href="images/favicon-iphone.svg")
-		link(rel="apple-touch-icon" sizes="57x57" href="images/favicon-iphone.png")
-		link(rel="apple-touch-icon" sizes="114x114" href="images/favicon-iphone.png")
-		link(rel="apple-touch-icon" sizes="72x72" href="images/favicon-iphone.png")
-		link(rel="apple-touch-icon" sizes="144x144" href="images/favicon-iphone.png")
-
+		
 		//- ===== styles =====
 		link(rel="stylesheet", href="css/fonts.css")
 		link(rel="stylesheet", href="css/all.css")
@@ -41,7 +30,7 @@ html(lang="ru")
 								a.sprite__link.sprite__link--mail(href="#")
 						.col-12
 							.title
-								.title__name Ride every wave as if it's your last
+								h1.title__name Ride every wave as if it's your last
 								.title__promo We love the motion of the ocean
 				main.main
 					block content
@@ -69,7 +58,7 @@ html(lang="ru")
 										.footer__mail-title Subscribe to our newsletter
 										form.footer__form(action="")
 											input.footer__input(type="email" placeholder="Your e-mail")
-											a.footer__send(href="")
+											button.footer__send
 		aside.side-menu.js-side
 			.menu--side
 				a.menu__item.menu__item--side(href="#") Boards
