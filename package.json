@@ -4,16 +4,11 @@
   "main": "dist/js/all.js",
   "scripts": {
     "build:dev": "webpack --config=webpack/config.dev.js --hide-modules",
-    "build:prod": "webpack --config=webpack/config.prod.js --hide-modules",
-    "release": "npm run build:prod && node deploy",
-    "sftp": "node deploy",
-    "lint": "eslint **/*.js",
-    "prettier": "prettier-eslint --write **/*.js"
+    "build:prod": "webpack --config=webpack/config.prod.js --hide-modules"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "jquery": "^3.2.1",
-    "sftp-upload": "^1.0.0",
     "untildify": "^3.0.3",
     "vanilla-text-mask": "^5.0.1"
   },
@@ -29,9 +24,6 @@
     "browser-sync-webpack-plugin": "^2.2.2",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb-base": "^11.1.3",
-    "eslint-plugin-import": "^2.2.0",
     "extract-loader": "^3.0.0",
     "file-loader": "^2.0.0",
     "image-webpack-loader": "^4.3.1",

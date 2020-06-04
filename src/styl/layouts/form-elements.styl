@@ -20,12 +20,6 @@ select
 	.input-error &
 		border-color red-color
 		margin-bottom 0
-	// &.focus,
-	// &:focus
-	// 	background-color #fff
-	// &:hover
-	// 	background-color #fff
-	// 	box-shadow 0 0 10px rgba(163, 179, 183, 0.2)
 
 textarea
 	min-height 150px
@@ -122,19 +116,6 @@ textarea
 		& + &
 			border-top 1px solid gray-color
 
-
-.checkbox
-	cursor pointer
-	display inline-flex
-	input
-		display none
-		&:checked ~ {root()}__fake-input
-			background-image url('../images/icon-check.svg')
-			background-color #fff
-			background-repeat no-repeat
-			background-position 50%
-			border-color main-color
-				
 	&__fake-input
 		@extend input
 		size 32px
@@ -154,7 +135,6 @@ textarea
 		flex 0 1 auto
 
 .radiobutton
-	@extend .checkbox
 	input
 		&:checked ~ {root()}__fake-input
 			background-color main-color
