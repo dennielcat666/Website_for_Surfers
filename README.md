@@ -13,14 +13,3 @@ npm run build:dev  || yarn build:dev
 ```bash
 npm run build:prod || yarn build:prod
 ```
-
-### Релиз
-Релиз на сервер:
-```bash
-yarn sftp
-```
-
-Сборка + релиз:
-```bash
-npm run release || yarn release
-```
