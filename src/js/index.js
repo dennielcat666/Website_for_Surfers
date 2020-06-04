@@ -1,10 +1,5 @@
-import './util/modernizr'; // for sticky footer with flex in ie10
 import Tabs from './Tabs';
-import Popup from './Popup';
-import Accordion from './Accordion';
 import SideMenu from './SideMenu';
-import MaskedInput from './MaskedInput';
-import {Inputs, InputPassword, InputFile, Select} from './Inputs';
 
 /** matches polyfill */
 (function (e) {
@@ -22,88 +17,12 @@ import {Inputs, InputPassword, InputFile, Select} from './Inputs';
 */
 new SideMenu({}, function() {});
 
-/** Навешивает на все инпуты класс focus, если value не пустое */
-new Inputs();
-
-/** Добавляет переключаетль показать/скрыть пароль */
-new InputPassword();
-
-/** Кастомный input[type="file"] */
-new InputFile();
-
-/** Кастомный select */
-new Select();
-
-/**
- * Popup
- * загружает контент через http request
- * закрывается по нажатию Esc, клику на крестик, клику вне popup
- * принимает конфиг и callback
- */
-new Popup({}, function() {});
-
 /**
  * Табы
  * поддерживают вложенность
  * принимает конфиг и callback
  */
 new Tabs({}, function() {});
-
-/**
- * Аккордеон
- * поддерживают вложенность
- * принимает конфиг и callback
- */
-new Accordion({}, function() {});
-
-/** input с маской */
-MaskedInput(
-	'.js-inputmask-phone input',
-	['+', '7', ' ', '(', /\d/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, ' ', /\d/, /\d/, '-', /\d/, /\d/],
-	'+7 (___) ___ __-__',
-	'+7 ('
-);
-
-
-/** input с маской */
-(() => {
-	const tooltipList = $('.js-tooltip');
-
-	function setTooltipBehavior(tooltipEl) {
-		if (!tooltipEl) return;
-		const tooltip = tooltipEl;
-		tooltip.style.transform = '';
-		const rect = tooltip.getBoundingClientRect();
-		const pageWidth = document.body.clientWidth;
-		let offset = 0;
-
-		if (rect.left < 0) {
-			offset = -rect.left + 10;
-		} else if (rect.right > pageWidth) {
-			offset = pageWidth - rect.right - 10;
-		} else {
-			return;
-		}
-		tooltip.style.transform = `translateX(${offset}px)`;
-	}
-
-	function setTooltip(tooltip) {
-		if (!tooltip) return;
-		setTimeout(() => {
-			// fix a reload page bug
-			setTooltipBehavior(tooltip);
-		}, 10);
-		window.addEventListener(
-			'resize',
-			setTooltipBehavior.bind(null, tooltip)
-		);
-	}
-
-	tooltipList.map((tooltip) => {
-		setTooltip(tooltipList[tooltip]);
-	});
-})();
-
 
 /** Копирует ссылку страницы в списке страниц */
 (() => {
