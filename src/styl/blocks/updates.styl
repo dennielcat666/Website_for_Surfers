@@ -1,10 +1,12 @@
 .updates
+
 	&__box
 		margin-top 175px
 		@media tablet
 			margin-top 100px
 		@media mobile
 			margin-top 50px
+
 	&__name
 		position relative
 		font-family secondFontFamily
@@ -12,6 +14,7 @@
 		font-size 18px
 		font-weight 700
 		letter-spacing 2px
+
 		&::after
 			position absolute
 			top 38px
@@ -22,6 +25,7 @@
 			background-repeat no-repeat
 			width 13px
 			height 13px
+
 	&__block
 		display flex
 		padding-left 50px
@@ -33,27 +37,34 @@
 		@media small
 			padding-left 10px
 			padding-right 10px
+
 	&__wrap
 		max-width 270px
 		width 100%
 		background-color #fff
+
 		&:not(:first-child)
 			margin-left 30px
+
 		&:last-child
 			@media tablet
 				margin-left 0px
+
 		&:nth-child(2)
 			@media mobile
 				margin-left 0px
+
 	&__img
 		width 270px
 		height 203px
 		background-repeat no-repeat
+
 	&__text
 		padding 21px 26px
 		font-family fontFamily
 		font-size 16px
 		color #787878
+
 	&__link
 		margin-top 39px
 		padding 11px 30px
@@ -69,6 +80,7 @@
 
 .updates__wrap:hover
 	box-shadow 0px 0px 25px rgba(0,0,0,0.3)
+	
 	& .updates__text
 		color #0022ff
 

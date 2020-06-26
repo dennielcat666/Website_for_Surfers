@@ -5,17 +5,17 @@
 	z-index 1
 	@media tablet
 		margin-top 50px
-	&__box
-		// display flex
-		// flex-direction column
+
 	&__menu
 		display flex
 		margin-left 73px
 		@media tablet
 			margin-left 0px
 			justify-content space-around
+
 	&__menu-colum:not(:first-child)
 		margin-left 63px
+
 	&__menu-link
 		font-family fontFamily
 		font-size 14px
@@ -25,8 +25,10 @@
 		color #fff
 		border none
 		line-height 25px
+
 		&:not(:first-child)
 			margin-top 9px
+
 		&:before
 			position absolute
 			top 50%
@@ -37,12 +39,14 @@
 			background-image url('../images/wave_y.png')
 			height 6px
 			width 100%
+
 	&__bottom
 		margin-top 75px
 		display flex
 		@media tablet
 			margin-top 20px
 			flex-direction column-reverse
+
 	&__copyright
 		color #4d4d4d
 		font-weight 600
@@ -50,21 +54,26 @@
 		font-size 12px
 		@media tablet
 			text-align center
+
 	&__icon
 		font-size 18px
+
 	&__mail
 		padding-top 45px
 		padding-bottom 17px
 		margin-left 67px
 		@media tablet
 			margin-left 0px
+
 	&__mail-title
 		color #fff
 		font-family secondFontFamily
 		font-size 16px
 		font-weight 400
+
 	&__form
 		position relative
+
 		&:before
 			content ''
 			position absolute
@@ -73,6 +82,7 @@
 			background-image url('../images/mail_icon.png')
 			height 11px
 			width 16px
+			
 	&__send
 		position absolute
 		top 50%
