@@ -17,6 +17,10 @@ https://dennielcat666.github.io/Website_for_Surfers/dist/index.html
 
 Подключен простой видеоплеер с музыкой
 
+## Адаптивная верстка
+
+Есть.
+
 
 
 ### Зависимости
