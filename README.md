@@ -26,7 +26,8 @@ https://dennielcat666.github.io/Website_for_Surfers/dist/index.html
 1. Webpack
 2. PUG
 3. Stylus
-4. Babel
+4. JavaScript
+5. Babel
 
 ### Зависимости
 ```bash
