@@ -21,7 +21,13 @@ https://dennielcat666.github.io/Website_for_Surfers/dist/index.html
 
 Есть.
 
+## Стек
 
+1. Webpack
+2. PUG
+3. SASS
+4. jQuery
+5. Babel
 
 ### Зависимости
 ```bash
