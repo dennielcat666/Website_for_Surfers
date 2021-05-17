@@ -1,9 +1,9 @@
 # Website for Surfers
 
 ### GitHub Pages
-```bash
+
 https://dennielcat666.github.io/Website_for_Surfers/dist/index.html
-```
+
 
 ## Блок меню
 
